@@ -7,12 +7,22 @@
 
 #include <avr/io.h>
 
+#include <util/delay.h>
 
 int main(void)
 {
-    /* Replace with your application code */
+	DDRB = 0b10000000;
     while (1) 
     {
+		if (PINB & (1 << PINB6))
+		{
+			PORTB |= 0b10000000;
+		}
+		else
+		{
+			PORTB &= 0b01111111;
+		}
+		//_delay_ms(200);
     }
 }
 
