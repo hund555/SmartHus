@@ -20,6 +20,7 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 	
 	ICR1 = 20000;
 	```
+	
 </details>
 
 ![image](Pictures/ServoMoter.png)
