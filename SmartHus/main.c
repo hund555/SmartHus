@@ -3,8 +3,8 @@
  *
  * Created: 07-12-2020 08:18:22
  * Author : alla1862
- */ 
-
+ */
+ #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <string.h>
 #include <avr/interrupt.h>
@@ -44,17 +44,16 @@ void Detected_Motion()
 
 void Servo_Timer_Init()
 {
-	// Compare Output Mode: Fast PWM Mode: Clear OC0B on Compare Match, set OC0B at BOTTOM, non-inverting mode (Table 16-6)
-	TCCR0A |= (1<<COM0B1);					// datasheet 16.9.1
+	// Compare Output Mode: Fast PWM Mode: Clear OC1A on Compare Match, set OC1A at BOTTOM, non-inverting mode (Table 17-5)
+	TCCR1A |= (1<<COM1A1);
 	
-	//Waveform Generation Mode: Mode 3 Fast PWM: WGM0 = 1, WGM1 = 1 (Table 16-8)
-	TCCR0A |= (1<<WGM00) | (1<<WGM01);
+	//Waveform Generation Mode: Mode 8 Fast PWM: WGMn3 = 1 (Table 17-2)
+	TCCR1B |= (1 << WGM13);
 	
-	// Clock Select Bit: clk/64 prescaling: CS = 011 : CS01 = 1, CS00 = 1 (Table 16-9), frekv. = 980Hz
-	TCCR0B |= (1<<CS01);		// datasheet 16.9.2
+	// Clock Select Bit: clk/8 prescaling: CS = 011 : = 1, CS11 = 1 (Table 17-6), frekv. = 50Hz
+	TCCR1B |= (1<<CS11);
 	
-	
-	
+	ICR1 = 20000;
 }
 
 void ResetPassword()
@@ -66,7 +65,9 @@ void ResetPassword()
 void CorrectPassword()
 {
 	PORTH |= (1 << PH5);
-	OCR0B = (25 * 256) / 100;
+	OCR1A = 1800;
+	_delay_ms(2000);
+	OCR1A = 500;
 	ResetPassword();
 }
 
@@ -106,14 +107,13 @@ void CheckPassword(unsigned char userInput)
 	}
 	
 	_delay_ms(200);
-	PORTH &= ~(1 << PH4);
-	PORTB &= ~(1 << PB5);
+	PORTH &= ~((1 << PH4) | (1 << PH5));
 }
 
 int main(void)
 {
 	Init();
-	
+	OCR1A = 500;
 	Servo_Timer_Init();
 	
 	//Sensor interrupt
