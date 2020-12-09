@@ -33,13 +33,17 @@ LINKER_SCRIPT_DEP:=
 
 # Every subdirectory with source files must be described here
 SUBDIRS :=  \
-../KeyPad
+../KeyPad \
+../PasswordHandler \
+../ServoMoter
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../KeyPad/KeyPad.c \
-../main.c
+../main.c \
+../PasswordHandler/PasswordHandler.c \
+../ServoMoter/ServoMoter.c
 
 
 PREPROCESSING_SRCS += 
@@ -50,19 +54,27 @@ ASM_SRCS +=
 
 OBJS +=  \
 KeyPad/KeyPad.o \
-main.o
+main.o \
+PasswordHandler/PasswordHandler.o \
+ServoMoter/ServoMoter.o
 
 OBJS_AS_ARGS +=  \
 KeyPad/KeyPad.o \
-main.o
+main.o \
+PasswordHandler/PasswordHandler.o \
+ServoMoter/ServoMoter.o
 
 C_DEPS +=  \
 KeyPad/KeyPad.d \
-main.d
+main.d \
+PasswordHandler/PasswordHandler.d \
+ServoMoter/ServoMoter.d
 
 C_DEPS_AS_ARGS +=  \
 KeyPad/KeyPad.d \
-main.d
+main.d \
+PasswordHandler/PasswordHandler.d \
+ServoMoter/ServoMoter.d
 
 OUTPUT_FILE_PATH +=SmartHus.elf
 
@@ -86,6 +98,20 @@ KeyPad/KeyPad.o: ../KeyPad/KeyPad.c
 	
 
 ./main.o: .././main.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+PasswordHandler/PasswordHandler.o: ../PasswordHandler/PasswordHandler.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+ServoMoter/ServoMoter.o: ../ServoMoter/ServoMoter.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include"  -O0 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
-                              main.o (__ltsf2)
+                              PasswordHandler/PasswordHandler.o (__ltsf2)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o)
-                              main.o (__fixunssfsi)
+                              PasswordHandler/PasswordHandler.o (__fixunssfsi)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_cmp.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o) (__fp_cmp)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_split3.o)
@@ -11,9 +11,9 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_zero.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o) (__fp_zero)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(gesf2.o)
-                              main.o (__gtsf2)
+                              PasswordHandler/PasswordHandler.o (__gtsf2)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o)
-                              main.o (__mulsf3)
+                              PasswordHandler/PasswordHandler.o (__mulsf3)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3x.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o) (__mulsf3x)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_inf.o)
@@ -33,16 +33,16 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
                               KeyPad/KeyPad.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                              main.o (__do_clear_bss)
+                              PasswordHandler/PasswordHandler.o (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memset.o)
-                              main.o (memset)
+                              PasswordHandler/PasswordHandler.o (memset)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strncmp.o)
-                              main.o (strncmp)
+                              PasswordHandler/PasswordHandler.o (strncmp)
 
 Allocating common symbols
 Common symbol       size              file
 
-keyPadInput         0x4               main.o
+keyPadInput         0x4               PasswordHandler/PasswordHandler.o
 
 Discarded input sections
 
@@ -54,6 +54,12 @@ Discarded input sections
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
+ .text          0x00000000        0x0 PasswordHandler/PasswordHandler.o
+ .data          0x00000000        0x0 PasswordHandler/PasswordHandler.o
+ .bss           0x00000000        0x0 PasswordHandler/PasswordHandler.o
+ .text          0x00000000        0x0 ServoMoter/ServoMoter.o
+ .data          0x00000000        0x0 ServoMoter/ServoMoter.o
+ .bss           0x00000000        0x0 ServoMoter/ServoMoter.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
@@ -181,6 +187,8 @@ Address of section .data set to 0x800200
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
 LOAD KeyPad/KeyPad.o
 LOAD main.o
+LOAD PasswordHandler/PasswordHandler.o
+LOAD ServoMoter/ServoMoter.o
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a
 END GROUP
@@ -290,7 +298,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xa98
+.text           0x00000000      0xa86
  *(.vectors)
  .vectors       0x00000000       0xe4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
@@ -421,90 +429,90 @@ END GROUP
  .text.__vector_9
                 0x000003a2       0x5c main.o
                 0x000003a2                __vector_9
- .text.Init     0x000003fe       0x6a main.o
+ .text.Init     0x000003fe       0x5a main.o
                 0x000003fe                Init
  .text.Detected_Motion
-                0x00000468       0x36 main.o
-                0x00000468                Detected_Motion
- .text.Servo_Timer_Init
-                0x0000049e       0x54 main.o
-                0x0000049e                Servo_Timer_Init
+                0x00000458       0x36 main.o
+                0x00000458                Detected_Motion
+ .text.main     0x0000048e       0x54 main.o
+                0x0000048e                main
  .text.ResetPassword
-                0x000004f2       0x26 main.o
-                0x000004f2                ResetPassword
+                0x000004e2       0x26 PasswordHandler/PasswordHandler.o
+                0x000004e2                ResetPassword
  .text.CorrectPassword
-                0x00000518      0x130 main.o
-                0x00000518                CorrectPassword
+                0x00000508      0x130 PasswordHandler/PasswordHandler.o
+                0x00000508                CorrectPassword
  .text.WrongPassword
-                0x00000648       0x24 main.o
-                0x00000648                WrongPassword
- .text.Append   0x0000066c       0x3a main.o
-                0x0000066c                Append
+                0x00000638       0x24 PasswordHandler/PasswordHandler.o
+                0x00000638                WrongPassword
+ .text.Append   0x0000065c       0x3a PasswordHandler/PasswordHandler.o
+                0x0000065c                Append
  .text.CheckPassword
-                0x000006a6      0x146 main.o
-                0x000006a6                CheckPassword
- .text.main     0x000007ec       0x56 main.o
-                0x000007ec                main
+                0x00000696      0x146 PasswordHandler/PasswordHandler.o
+                0x00000696                CheckPassword
+ .text.Servo_Timer_Init
+                0x000007dc       0x54 ServoMoter/ServoMoter.o
+                0x000007dc                Servo_Timer_Init
  .text.avr-libc.fplib
-                0x00000842        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
-                0x00000842                __nesf2
-                0x00000842                __eqsf2
-                0x00000842                __cmpsf2
-                0x00000842                __ltsf2
-                0x00000842                __lesf2
+                0x00000830        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(cmpsf2.o)
+                0x00000830                __nesf2
+                0x00000830                __eqsf2
+                0x00000830                __cmpsf2
+                0x00000830                __ltsf2
+                0x00000830                __lesf2
  .text.avr-libc.fplib
-                0x0000084a       0x58 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o)
-                0x0000084a                __fixunssfsi
+                0x00000838       0x58 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o)
+                0x00000838                __fixunssfsi
  .text.avr-libc.fplib
-                0x000008a2       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_cmp.o)
-                0x000008a2                __fp_cmp
+                0x00000890       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_cmp.o)
+                0x00000890                __fp_cmp
  .text.avr-libc.fplib
-                0x000008ea       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_split3.o)
-                0x000008ea                __fp_split3
-                0x000008fa                __fp_splitA
+                0x000008d8       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_split3.o)
+                0x000008d8                __fp_split3
+                0x000008e8                __fp_splitA
  .text.avr-libc.fplib
-                0x0000092e        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_zero.o)
-                0x0000092e                __fp_zero
-                0x00000930                __fp_szero
+                0x0000091c        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_zero.o)
+                0x0000091c                __fp_zero
+                0x0000091e                __fp_szero
  .text.avr-libc.fplib
-                0x0000093c        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(gesf2.o)
-                0x0000093c                __gesf2
-                0x0000093c                __gtsf2
+                0x0000092a        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(gesf2.o)
+                0x0000092a                __gesf2
+                0x0000092a                __gtsf2
  .text.avr-libc.fplib
-                0x00000944        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o)
-                0x00000944                __mulsf3
+                0x00000932        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o)
+                0x00000932                __mulsf3
  .text.avr-libc.fplib
-                0x00000948       0xc2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3x.o)
-                0x0000095c                __mulsf3x
-                0x00000960                __mulsf3_pse
+                0x00000936       0xc2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3x.o)
+                0x0000094a                __mulsf3x
+                0x0000094e                __mulsf3_pse
  .text.avr-libc.fplib
-                0x00000a0a        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_inf.o)
-                0x00000a0a                __fp_inf
+                0x000009f8        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_inf.o)
+                0x000009f8                __fp_inf
  .text.avr-libc.fplib
-                0x00000a16        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_nan.o)
-                0x00000a16                __fp_nan
+                0x00000a04        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_nan.o)
+                0x00000a04                __fp_nan
  .text.avr-libc.fplib
-                0x00000a1c        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscA.o)
-                0x00000a1c                __fp_pscA
+                0x00000a0a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscA.o)
+                0x00000a0a                __fp_pscA
  .text.avr-libc.fplib
-                0x00000a2a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscB.o)
-                0x00000a2a                __fp_pscB
+                0x00000a18        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscB.o)
+                0x00000a18                __fp_pscB
  .text.avr-libc.fplib
-                0x00000a38       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_round.o)
-                0x00000a38                __fp_round
- .text.libgcc   0x00000a5a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
-                0x00000a5a                __tablejump2__
+                0x00000a26       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_round.o)
+                0x00000a26                __fp_round
+ .text.libgcc   0x00000a48       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
+                0x00000a48                __tablejump2__
  .text.avr-libc
-                0x00000a6a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memset.o)
-                0x00000a6a                memset
+                0x00000a58        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(memset.o)
+                0x00000a58                memset
  .text.avr-libc
-                0x00000a78       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strncmp.o)
-                0x00000a78                strncmp
-                0x00000a94                . = ALIGN (0x2)
+                0x00000a66       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strncmp.o)
+                0x00000a66                strncmp
+                0x00000a82                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000a94        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
-                0x00000a94                _exit
-                0x00000a94                exit
+ .fini9         0x00000a82        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+                0x00000a82                _exit
+                0x00000a82                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -523,18 +531,18 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000a94        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x00000a82        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000a98                _etext = .
+                0x00000a86                _etext = .
 
-.data           0x00800200        0x8 load address 0x00000a98
+.data           0x00800200        0x8 load address 0x00000a86
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  .data.columnCounter.1603
                 0x00800200        0x2 KeyPad/KeyPad.o
  .data.password
-                0x00800202        0x5 main.o
+                0x00800202        0x5 PasswordHandler/PasswordHandler.o
                 0x00800202                password
  *(.gnu.linkonce.d*)
  *(.rodata)
@@ -549,14 +557,14 @@ END GROUP
                 0x00800208                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.index     0x00800208        0x2 main.o
+ .bss.index     0x00800208        0x2 PasswordHandler/PasswordHandler.o
                 0x00800208                index
  *(COMMON)
- COMMON         0x0080020a        0x4 main.o
+ COMMON         0x0080020a        0x4 PasswordHandler/PasswordHandler.o
                 0x0080020a                keyPadInput
                 0x0080020e                PROVIDE (__bss_end, .)
-                0x00000a98                __data_load_start = LOADADDR (.data)
-                0x00000aa0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000a86                __data_load_start = LOADADDR (.data)
+                0x00000a8e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080020e        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -607,6 +615,8 @@ END GROUP
  .comment       0x00000000       0x30 KeyPad/KeyPad.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 PasswordHandler/PasswordHandler.o
+ .comment       0x00000030       0x31 ServoMoter/ServoMoter.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -628,51 +638,69 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0x98
+.debug_aranges  0x00000000       0xc8
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x30 KeyPad/KeyPad.o
  .debug_aranges
-                0x00000030       0x68 main.o
+                0x00000030       0x38 main.o
+ .debug_aranges
+                0x00000068       0x40 PasswordHandler/PasswordHandler.o
+ .debug_aranges
+                0x000000a8       0x20 ServoMoter/ServoMoter.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xfe5
+.debug_info     0x00000000     0x10dc
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_info    0x00000bbc      0x110 KeyPad/KeyPad.o
- .debug_info    0x00000ccc      0x319 main.o
+ .debug_info    0x00000ccc       0xf6 main.o
+ .debug_info    0x00000dc2      0x28d PasswordHandler/PasswordHandler.o
+ .debug_info    0x0000104f       0x8d ServoMoter/ServoMoter.o
 
-.debug_abbrev   0x00000000      0xd58
+.debug_abbrev   0x00000000      0xdff
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_abbrev  0x00000b1a       0xb2 KeyPad/KeyPad.o
- .debug_abbrev  0x00000bcc      0x18c main.o
+ .debug_abbrev  0x00000bcc       0xb1 main.o
+ .debug_abbrev  0x00000c7d      0x133 PasswordHandler/PasswordHandler.o
+ .debug_abbrev  0x00000db0       0x4f ServoMoter/ServoMoter.o
 
-.debug_line     0x00000000      0x72c
+.debug_line     0x00000000      0x860
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1fa C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_line    0x000001fa      0x1c5 KeyPad/KeyPad.o
- .debug_line    0x000003bf      0x36d main.o
+ .debug_line    0x000003bf      0x14f main.o
+ .debug_line    0x0000050e      0x28a PasswordHandler/PasswordHandler.o
+ .debug_line    0x00000798       0xc8 ServoMoter/ServoMoter.o
 
-.debug_frame    0x00000000      0x1f0
+.debug_frame    0x00000000      0x218
  *(.debug_frame)
  .debug_frame   0x00000000       0x74 KeyPad/KeyPad.o
- .debug_frame   0x00000074      0x17c main.o
+ .debug_frame   0x00000074       0xbc main.o
+ .debug_frame   0x00000130       0xb4 PasswordHandler/PasswordHandler.o
+ .debug_frame   0x000001e4       0x34 ServoMoter/ServoMoter.o
 
-.debug_str      0x00000000      0x66a
+.debug_str      0x00000000      0x6aa
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  .debug_str     0x000003e6      0x18a KeyPad/KeyPad.o
                                 0x1c3 (size before relaxing)
- .debug_str     0x00000570       0xfa main.o
-                                0x26b (size before relaxing)
+ .debug_str     0x00000570       0x3a main.o
+                                0x1ab (size before relaxing)
+ .debug_str     0x000005aa       0xd4 PasswordHandler/PasswordHandler.o
+                                0x249 (size before relaxing)
+ .debug_str     0x0000067e       0x2c ServoMoter/ServoMoter.o
+                                0x19c (size before relaxing)
 
 .debug_loc      0x00000000      0x3c0
  *(.debug_loc)
  .debug_loc     0x00000000       0xd8 KeyPad/KeyPad.o
- .debug_loc     0x000000d8      0x2e8 main.o
+ .debug_loc     0x000000d8      0x161 main.o
+ .debug_loc     0x00000239      0x14c PasswordHandler/PasswordHandler.o
+ .debug_loc     0x00000385       0x3b ServoMoter/ServoMoter.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -692,10 +720,12 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x78
+.debug_ranges   0x00000000       0x88
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x20 KeyPad/KeyPad.o
- .debug_ranges  0x00000020       0x58 main.o
+ .debug_ranges  0x00000020       0x28 main.o
+ .debug_ranges  0x00000048       0x30 PasswordHandler/PasswordHandler.o
+ .debug_ranges  0x00000078       0x10 ServoMoter/ServoMoter.o
 
 .debug_macro
  *(.debug_macro)
