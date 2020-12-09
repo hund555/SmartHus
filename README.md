@@ -9,7 +9,7 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 <details><summary>Se kode</summary>
 <p>
 ```c
-// Compare Output Mode: Fast PWM Mode: Clear OC1A on Compare Match, set OC1A at BOTTOM, non-inverting mode (Table 17-5)
+    // Compare Output Mode: Fast PWM Mode: Clear OC1A on Compare Match, set OC1A at BOTTOM, non-inverting mode (Table 17-5)
 	TCCR1A |= (1<<COM1A1);
 	
 	//Waveform Generation Mode: Mode 8 Fast PWM: WGMn3 = 1 (Table 17-2)
@@ -22,6 +22,7 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 ```
 </p>
 </details>
+
 ![image](Pictures/ServoMoter.png)
 ## Sådan sætter du det op på en elegoo mega2560
 PORTK 1, 2, 3, 4, 5, 6 og 7 er til keypad.
