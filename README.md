@@ -7,6 +7,7 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 ![image](Pictures/HIPODiagram.PNG)
 ## Servo Moter
 <details><summary>Se kode</summary>
+	
 	```c
     	// Compare Output Mode: Fast PWM Mode: Clear OC1A on Compare Match, set OC1A at BOTTOM, non-inverting mode (Table 17-5)
 	TCCR1A |= (1<<COM1A1);
