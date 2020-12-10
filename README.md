@@ -5,7 +5,9 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 
 ## <details><summary>Flowchart</summary>
 
+
  ![image](Pictures/Flowchart.PNG)
+ 
 
 </details>
 
