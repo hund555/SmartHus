@@ -11,7 +11,7 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 - [x] Grøn LED ved rigtig kode
 - [x] Rød LED ved forkert kode
 - [x] Servo moter til at åbne en dør ved rigtig kode
-- [ ] sensor til at tælle hvor mange der er i huset
+- [ ] Sensor til at tælle hvor mange der er i huset
 - [ ] Motor til at lave cirkulation i huset
 	
 </details>
