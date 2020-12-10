@@ -3,6 +3,16 @@
 ### Projekt beskrivelse
 Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis den fanger noget bevægelse tænder den noget lys ved indgangen af huset. for at komme ind i huset skal du trykke en kode ind på en lille keypad og hvis koden er rigtig vil døren åbne. indenfor vil der være en sensor som skal holde styr på om der er nogle inde i huset og så længe der er nogle indenfor skal der køre en mølle som skal lave luft cirkulation.
 
+## <details><summary>Frem skridt</summary>
+	
+- [x] Sensor til at tænde lys
+- [x] Keypad til at indtaste kode
+- [x] Servo moter til at åbne en dør ved rigtig kode
+- [ ] sensor til at tælle hvor mange der er i huset
+- [ ] Motor til at lave cirkulation i huset
+	
+</details>
+
 ## Flowchart
 ![image](Pictures/Flowchart.PNG)
 
