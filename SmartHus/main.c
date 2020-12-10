@@ -6,12 +6,11 @@
  */
 #define F_CPU 16000000UL
 #include <avr/io.h>
-#include <string.h>
 #include <avr/interrupt.h>
-#include <util/delay.h>
 #include "KeyPad/KeyPad.h"
 #include "ServoMoter/ServoMoter.h"
 #include "PasswordHandler/PasswordHandler.h"
+#include "MotionSensor/MotionSensor.h"
 
 
 ISR(PCINT0_vect)
@@ -25,29 +24,20 @@ void Init()
 	PORTK |= 0b11110000;	// Enable Pull-up on Row pins (upper nibble)
 	DDRB |= 0b10100000;		// PB7 is for sensor LED PB6 is sensor
 	
-	DDRH |= (1 << PH4) | (1 << PH5);
+	DDRH |= (1 << PH4) | (1 << PH5); //PH4 red LED turns on if user give the wrong password. PH5 green LED turns on if user give the correct password.
 	
 	Servo_Timer_Init();
-}
-
-void Detected_Motion()
-{
-	if (!(PINB & (1 << PINB6)))
-	{
-		PORTB &= 0b01111111;
-	}
+	MotionSensor_Init();
+	
+	OCR1A = 500;
+	
+	sei();
 }
 
 int main(void)
 {
 	Init();
-	OCR1A = 500;
 	
-	//Sensor interrupt
-	PCICR |= (1<<PCIE0);
-	PCMSK0 |= (1<<PCINT6);
-	
-	sei();
 	
     while (1) 
     {
