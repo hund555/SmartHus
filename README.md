@@ -4,9 +4,9 @@
 Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis den fanger noget bevægelse tænder den noget lys ved indgangen af huset. for at komme ind i huset skal du trykke en kode ind på en lille keypad og hvis koden er rigtig vil døren åbne. indenfor vil der være en sensor som skal holde styr på om der er nogle inde i huset og så længe der er nogle indenfor skal der køre en mølle som skal lave luft cirkulation.
 
 ## <details><summary>Flowchart</summary>
-	
+
 ![image](Pictures/Flowchart.PNG)
-	
+
 </details>
 
 ## HIPO diagram
