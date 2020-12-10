@@ -6,7 +6,10 @@ Jeg Har tænkt mig at lave et smart hus, hvor der er en sensor udenfor som hvis 
 <details><summary>Frem skridt</summary>
 	
 - [x] Sensor til at tænde lys
+- [x] LED som tændes af sensor
 - [x] Keypad til at indtaste kode
+- [x] Grøn LED ved rigtig kode
+- [x] Rød LED ved forkert kode
 - [x] Servo moter til at åbne en dør ved rigtig kode
 - [ ] sensor til at tælle hvor mange der er i huset
 - [ ] Motor til at lave cirkulation i huset
